@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05bdf038-dbda-45ae-be79-2e7dbd9e9274" name="Default Changelist" comment="" />
+    <list default="true" id="05bdf038-dbda-45ae-be79-2e7dbd9e9274" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isbn-validator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExternalISBNDataService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StockManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ValidateISBN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ExampleTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StockManagementTests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StockManagementTests$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StockManagementTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tax-calculator/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tax-calculator/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tax-calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tax-calculator/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +34,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -28,11 +47,13 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UPSXlchePKloGMvH6QS9sw1beP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/com.virtualpairprogrammers.isbntools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -105,10 +126,13 @@
     </configuration>
     <configuration name="StockManagementTests.databaseIsUsedIfDataIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="isbn-validator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StockManagementTests" />
       <option name="METHOD_NAME" value="databaseIsUsedIfDataIsPresent" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,6 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ExampleTests" />
+      <item itemvalue="JUnit.ExampleTests.checkAValid10DigitISBN" />
+      <item itemvalue="JUnit.StockManagementTests" />
+      <item itemvalue="JUnit.StockManagementTests.databaseIsUsedIfDataIsPresent" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StockManagementTests.databaseIsUsedIfDataIsPresent" />
@@ -178,10 +208,31 @@
       <option name="presentableId" value="Default" />
       <updated>1575256778280</updated>
       <workItem from="1575256783199" duration="5676000" />
+      <workItem from="1575343864090" duration="4000" />
+      <workItem from="1575343933076" duration="177000" />
+      <workItem from="1575344124223" duration="6000" />
+      <workItem from="1575344254695" duration="69000" />
+      <workItem from="1575344857078" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/isbn_validator$StockManagementTests_databaseIsUsedIfDataIsPresent.ic" NAME="StockManagementTests.databaseIsUsedIfDataIsPresent Coverage Results" MODIFIED="1575345059556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

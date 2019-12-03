@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7617149-6371-4dfb-9eb5-82da5ba08a74" name="Default Changelist" comment="" />
+    <list default="true" id="c7617149-6371-4dfb-9eb5-82da5ba08a74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../isbn-validator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/isbn-validator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/ExternalISBNDataService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/StockManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/ValidateISBN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/ExampleTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/StockManagementTests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/StockManagementTests$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/StockManagementTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +38,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1SDGygAcA78V8Z4zM9ojfwwij3C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -203,11 +230,26 @@
       <workItem from="1573271780464" duration="13394000" />
       <workItem from="1573513887756" duration="6240000" />
       <workItem from="1575256827769" duration="843000" />
+      <workItem from="1575344824179" duration="20000" />
+      <workItem from="1575345441913" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/taxservice$All_in_tax_service.ic" NAME="All in tax-service Coverage Results" MODIFIED="1573143538750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
