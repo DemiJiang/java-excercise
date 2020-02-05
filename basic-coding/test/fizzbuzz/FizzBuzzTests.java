@@ -42,7 +42,8 @@ public class FizzBuzzTests {
 
     @Test
     public void multipleShouldReturnMultipleFizzBuzz(){
-        String result = fizzBuzz.fizzBuzz(IntStream.rangeClosed(1,17).toArray());
+//        String result = fizzBuzz.fizzBuzz(IntStream.rangeClosed(1,17).toArray());
+        String result = fizzBuzz.fizzBuzz(17);
         assertEquals("12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzz1617", result);
     }
 

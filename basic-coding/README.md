@@ -21,6 +21,12 @@ https://stackoverflow.com/questions/1938101/how-to-initialize-an-array-in-java
 
 6. Fill arrays with ranges of numbers
 https://stackoverflow.com/questions/3387373/fill-arrays-with-ranges-of-numbers
+
+7. Coding Kata 
+http://codingdojo.org/kata/
+
+8. For TDD, your don't need 
+
 ```
 
 ```
