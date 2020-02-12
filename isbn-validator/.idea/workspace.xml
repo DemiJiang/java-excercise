@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05bdf038-dbda-45ae-be79-2e7dbd9e9274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../basic-coding/src/fizzbuzz/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../basic-coding/src/theverybasics/BasicCodingKatas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../basic-coding/test/fizzbuzz/FizzBuzzTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic-coding/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic-coding/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic-coding/basic-coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/basic-coding.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic-coding/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isbn-validator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExternalISBNDataService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StockManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ValidateISBN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ExampleTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StockManagementTests$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StockManagementTests$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StockManagementTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tax-calculator/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tax-calculator/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tax-calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tax-calculator/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +206,8 @@
       <workItem from="1575344124223" duration="6000" />
       <workItem from="1575344254695" duration="69000" />
       <workItem from="1575344857078" duration="507000" />
+      <workItem from="1575430404435" duration="463000" />
+      <workItem from="1575431748972" duration="172000" />
     </task>
     <servers />
   </component>
