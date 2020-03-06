@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7617149-6371-4dfb-9eb5-82da5ba08a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../isbn-validator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/isbn-validator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/ExternalISBNDataService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/StockManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/classes/ValidateISBN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/ExampleTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/META-INF/isbn-validator.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/StockManagementTests$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/StockManagementTests$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isbn-validator/target/test-classes/StockManagementTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../basic-coding/src/routedistance/RouteDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../basic-coding/test/routedistance/RouteDistanceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic-coding/out/production/basic-coding/hacerkrank/STDINSTDOUT.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/out/production/basic-coding/hacerkrank/STDINSTDOUT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -232,6 +221,8 @@
       <workItem from="1575256827769" duration="843000" />
       <workItem from="1575344824179" duration="20000" />
       <workItem from="1575345441913" duration="3000" />
+      <workItem from="1581549291666" duration="1784000" />
+      <workItem from="1581558916692" duration="1126000" />
     </task>
     <servers />
   </component>
