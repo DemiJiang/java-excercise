@@ -1,3 +1,5 @@
+package blackjack;
+
 import blackjack.BlackJack;
 import blackjack.Hand;
 import java.util.*;
@@ -5,6 +7,7 @@ import blackjack.Deck;
 
 public class Main {
     public static void main(String[] args) {
+
         Deck deck = new Deck();
         deck.shuffle();
 
@@ -41,6 +44,4 @@ public class Main {
     public static int playerIn(Scanner scN){
         return scN.nextInt();
     }
-
-
 }

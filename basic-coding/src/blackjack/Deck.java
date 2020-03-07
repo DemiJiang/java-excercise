@@ -8,13 +8,10 @@ public class Deck {
 
     private List<Card> cards = new ArrayList<>();
 
-    String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9","10","JACK", "QUEEN", "KING", "ACE"};
-    String[] suits = {"SPADE", "HEART", "DIAMOND", "CLUB"};
-
     public Deck() {
-        for (int i=0;i<ranks.length;i++) {
-            for (int j=0;j<suits.length;j++) {
-                cards.add(new Card(ranks[i], suits[j]));
+        for (int i=0;i<Constant.RANKS.size();i++) {
+            for (int j=0;j<Constant.SUITS.size();j++) {
+                cards.add(new Card(Constant.RANKS.get(i), Constant.SUITS.get(j)));
             }
         }
     }
@@ -22,10 +19,6 @@ public class Deck {
     public void shuffle()
     {
         Collections.shuffle(cards);
-    }
-
-    public List<Card> getCards() {
-        return cards;
     }
 
     public Card drawCard(){

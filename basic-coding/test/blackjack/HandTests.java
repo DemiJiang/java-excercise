@@ -1,28 +1,51 @@
 package blackjack;
 
-import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class HandTests {
-    private static Card card1 = new Card("4", "DIAMOND");
-    private static Card card2 = new Card("ACE", "HEART");
-    private static List<Card> cards = new ArrayList<>();
-    private static Hand hand = new Hand();
+    private static Card card1 = new Card("8", "DIAMOND");
+    private static Card card2 = new Card("JACK", "HEART");
+    private static Card card3 = new Card("ACE", "HEART");
+    private static Card card4 = new Card("ACE", "DIAMOND");
 
-    @Before
-    public void setup(){
+    @Test
+    public void handValueShouldReturn18(){
+        Hand hand = new Hand();
         hand.getCards().add(card1);
         hand.getCards().add(card2);
+         int result = hand.calculateHandValue();
+        assertEquals(18, result);
     }
 
     @Test
-    public void handShouldReturnCorrectValue(){
-         int result = hand.calculateHandValue();
-        assertEquals(15, result);
+    public void handWithOneAceAs11ValueShouldReturn21(){
+        Hand hand = new Hand();
+        hand.getCards().add(card2);
+        hand.getCards().add(card3);
+        int result = hand.calculateHandValue();
+        assertEquals(21, result);
+    }
+
+    @Test
+    public void handWithOneAceAs1ValueShouldReturn19(){
+        Hand hand = new Hand();
+        hand.getCards().add(card1);
+        hand.getCards().add(card2);
+        hand.getCards().add(card3);
+        int result = hand.calculateHandValue();
+        assertEquals(19, result);
+    }
+
+    @Test
+    public void handWithTwoAcesAs1ValueShouldReturn20(){
+        Hand hand = new Hand();
+        hand.getCards().add(card1);
+        hand.getCards().add(card2);
+        hand.getCards().add(card3);
+        hand.getCards().add(card4);
+        int result = hand.calculateHandValue();
+        assertEquals(20, result);
     }
 }

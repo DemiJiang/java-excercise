@@ -5,19 +5,41 @@ import java.util.List;
 
 public class Hand {
     private List<Card> cards = new ArrayList<>();
-    List<String> ranks = List.of("2", "3", "4", "5", "6", "7", "8", "9","10");
 
     public int calculateHandValue(){
         int handValue = 0;
-        for(Card card:cards) {
+
+        for(Card card:cards){
             handValue += calculateCardValue(card);
         }
+        int noOfAces = numberOfAces();
+
+        while(noOfAces >0) {
+            if(handValue >21) {
+                handValue -= 10;
+                noOfAces -= 1;
+            }
+            if(handValue <= 21){
+                break;
+            }
+        }
+
         return handValue;
+    }
+
+    public int numberOfAces(){
+        int noOfAces = 0;
+        for (Card card:cards){
+            if(card.getRank().equals("ACE")){
+                noOfAces += 1;
+            }
+        }
+        return noOfAces;
     }
 
     private int calculateCardValue(Card card){
        int cardValue = 0;
-       if(ranks.contains(card.getRank())){
+       if(Constant.RANKS.contains(card.getRank())){
             cardValue = Integer.parseInt(card.getRank());
        }
        else if(card.getRank().equals("ACE")){
