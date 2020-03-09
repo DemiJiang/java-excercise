@@ -38,8 +38,26 @@ public class TrainRoutesTest {
     }
 
     @Test
-    public void noofTripsStartAEndCWithExactlyStopsShouldBe3(){
+    public void noOfTripsStartAEndCWithExactlyStopsShouldBe3(){
         String result = trainRoutes.calculateTripsWithExactlyStops(new Town<>("A"), new Town<>("C"), 4);
         assertEquals("3", result);
+    }
+
+    @Test
+    public void shortestRouteFromAToCShouldBe9(){
+        String result = trainRoutes.calculateShorteseRoute(new Town<>("A"), new Town<>("C"));
+        assertEquals("9", result);
+    }
+
+    @Test
+    public void shortestRouteFromBToBShouldBe9(){
+        String result = trainRoutes.calculateShorteseRoute(new Town<>("B"), new Town<>("B"));
+        assertEquals("9", result);
+    }
+
+    @Test
+    public void differentRoutesFromCToCWithMaxDistance30Should7(){
+        String result = trainRoutes.calculateDifferentRoutes(new Town<>("C"), new Town<>("C"), 30);
+        assertEquals("7", result);
     }
 }

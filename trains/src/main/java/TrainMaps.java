@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class TrainMaps {
-    private Map<Town<String>, List<Route>> trainMaps = new HashMap<>();
+    private Map<Town<String>, List<Destination>> trainMaps = new HashMap<>();
 
     public TrainMaps(String input){
         buildTrainMaps(input);
@@ -11,14 +11,14 @@ public class TrainMaps {
         List<String> graphList = new ArrayList<>(Arrays.asList(input.split("\\s*,\\s*")));
         for (String string : graphList) {
             Town<String> town = new Town<>(string.substring(0,1));
-            Town<String> routeTown = new Town<>(string.substring(1,2));
-            Route route = new Route(routeTown, Integer.parseInt(string.substring(2)));
+            Town<String> destinationTown = new Town<>(string.substring(1,2));
+            Destination destination = new Destination(destinationTown, Integer.parseInt(string.substring(2)));
             trainMaps.putIfAbsent(town, new ArrayList<>());
-            trainMaps.get(town).add(route);
+            trainMaps.get(town).add(destination);
         }
     }
 
-    public Map<Town<String>, List<Route>> getTrainMaps() {
+    public Map<Town<String>, List<Destination>> getTrainMaps() {
         return trainMaps;
     }
 }

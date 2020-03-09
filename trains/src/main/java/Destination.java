@@ -1,8 +1,8 @@
-public class Route {
+public class Destination {
     private Town<String> town;
     private int distance;
 
-    public Route(Town<String> town, int distance) {
+    public Destination(Town<String> town, int distance) {
         this.town = town;
         this.distance = distance;
     }
