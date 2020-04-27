@@ -2,12 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7617149-6371-4dfb-9eb5-82da5ba08a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../basic-coding/src/routedistance/RouteDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../basic-coding/test/routedistance/RouteDistanceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basic-coding/out/production/basic-coding/hacerkrank/STDINSTDOUT.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/out/production/basic-coding/hacerkrank/STDINSTDOUT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicTacToe/src/main/java/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicTacToe/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicTacToe/src/main/java/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/src/main/java/Connect4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../connect-four/src/test/java/Connect4Spec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-java-programming/target/classes/substitution_principle_wildcards/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-java-programming/target/classes/substitution_principle_wildcards/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../isbn-validator/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../isbn-validator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../isbn-validator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/src/main/com.virtualpairprogrammers.isbntools/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/src/main/com.virtualpairprogrammers.isbntools/ExternalISBNDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/src/main/com.virtualpairprogrammers.isbntools/StockManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/src/main/com.virtualpairprogrammers.isbntools/ValidateISBN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/src/test/com.virtualpairprogrammers.isbntools/ExampleTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isbn-validator/src/test/com.virtualpairprogrammers.isbntools/StockManagementTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/File/EmployeeFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/File/EmployeeFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/File/PayslipFileWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/File/PayslipFileWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/tax-service.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TaxCalculator/PayslipService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TaxCalculator/PayslipService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/tax-service.kotlin_module" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,11 +83,23 @@
   </component>
   <component name="ProjectId" id="1SDGygAcA78V8Z4zM9ojfwwij3C" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -66,18 +113,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="TaxCalculator" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="JUnit.TaxCalculatorTest">
     <configuration default="true" type="Applet">
@@ -223,6 +258,11 @@
       <workItem from="1575345441913" duration="3000" />
       <workItem from="1581549291666" duration="1784000" />
       <workItem from="1581558916692" duration="1126000" />
+      <workItem from="1584172398153" duration="43000" />
+      <workItem from="1584328559508" duration="1075000" />
+      <workItem from="1584475232933" duration="251000" />
+      <workItem from="1586051524611" duration="652000" />
+      <workItem from="1586066258481" duration="33000" />
     </task>
     <servers />
   </component>
@@ -241,6 +281,32 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="399" y="-682" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584172419336">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="399" y="-682" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584172419336" />
+    <state width="1358" height="200" key="GridCell.Tab.0.bottom" timestamp="1584172440782">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.bottom/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584172440782" />
+    <state width="1358" height="200" key="GridCell.Tab.0.center" timestamp="1584172440782">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.center/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584172440782" />
+    <state width="1358" height="200" key="GridCell.Tab.0.left" timestamp="1584172440781">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.left/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584172440781" />
+    <state width="1358" height="200" key="GridCell.Tab.0.right" timestamp="1584172440782">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.right/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584172440782" />
+    <state x="395" y="288" key="com.intellij.ide.util.TipDialog" timestamp="1584475266830">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="395" y="288" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1584475266830" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/taxservice$All_in_tax_service.ic" NAME="All in tax-service Coverage Results" MODIFIED="1573143538750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

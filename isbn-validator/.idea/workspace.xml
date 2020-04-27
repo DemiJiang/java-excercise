@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05bdf038-dbda-45ae-be79-2e7dbd9e9274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../basic-coding/src/fizzbuzz/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../basic-coding/src/theverybasics/BasicCodingKatas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../basic-coding/test/fizzbuzz/FizzBuzzTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basic-coding/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basic-coding/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basic-coding/basic-coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/basic-coding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basic-coding/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basic-coding/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com.virtualpairprogrammers.isbntools/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced-java-programming/target/classes/substitution_principle_wildcards/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../advanced-java-programming/target/classes/substitution_principle_wildcards/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +15,20 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,13 +46,26 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UPSXlchePKloGMvH6QS9sw1beP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/com.virtualpairprogrammers.isbntools" />
@@ -61,21 +84,29 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.StockManagementTests.databaseIsUsedIfDataIsPresent">
+  <component name="RunManager" selected="Maven.isbn-validator []">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="isbn-validator" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTests" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="isbn-validator" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExampleTests" />
@@ -107,20 +138,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockManagementTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StockManagementTests.databaseIsUsedIfDataIsPresent" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="isbn-validator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StockManagementTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockManagementTests.databaseIsUsedIfDataIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="isbn-validator" />
+      <useClassPathOnly />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.6" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StockManagementTests" />
       <option name="METHOD_NAME" value="databaseIsUsedIfDataIsPresent" />
@@ -131,12 +153,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="isbn-validator []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
@@ -157,16 +195,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.StockManagementTests.databaseIsUsedIfDataIsPresent" />
       <item itemvalue="JUnit.ExampleTests" />
       <item itemvalue="JUnit.ExampleTests.checkAValid10DigitISBN" />
-      <item itemvalue="JUnit.StockManagementTests" />
-      <item itemvalue="JUnit.StockManagementTests.databaseIsUsedIfDataIsPresent" />
+      <item itemvalue="Maven.isbn-validator []" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StockManagementTests.databaseIsUsedIfDataIsPresent" />
-        <item itemvalue="JUnit.StockManagementTests" />
-        <item itemvalue="JUnit.ExampleTests" />
         <item itemvalue="JUnit.ExampleTests.checkAValid10DigitISBN" />
       </list>
     </recent_temporary>
@@ -208,6 +243,12 @@
       <workItem from="1575344857078" duration="507000" />
       <workItem from="1575430404435" duration="463000" />
       <workItem from="1575431748972" duration="172000" />
+      <workItem from="1584164572785" duration="279000" />
+      <workItem from="1584166076400" duration="474000" />
+      <workItem from="1584167121488" duration="161000" />
+      <workItem from="1584168239367" duration="62000" />
+      <workItem from="1584168396848" duration="340000" />
+      <workItem from="1584169098749" duration="63000" />
     </task>
     <servers />
   </component>
@@ -226,6 +267,49 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="77" key="#" timestamp="1584168593061">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="306" y="77" key="#/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168593061" />
+    <state x="81" y="-959" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584169123232">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="81" y="-959" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584169123232" />
+    <state x="204" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168728532" />
+    <state x="477" y="207" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584168725408">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="477" y="207" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168725408" />
+    <state x="589" y="312" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584164607686">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="589" y="312" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.825/-157.-1027.1680.1027@0.23.1440.825" timestamp="1584164607686" />
+    <state width="1358" height="199" key="GridCell.Tab.0.bottom" timestamp="1584169161247">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="199" key="GridCell.Tab.0.bottom/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584169161247" />
+    <state width="1358" height="199" key="GridCell.Tab.0.bottom/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168736353" />
+    <state width="1358" height="199" key="GridCell.Tab.0.center" timestamp="1584169161246">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="199" key="GridCell.Tab.0.center/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584169161246" />
+    <state width="1358" height="199" key="GridCell.Tab.0.center/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168736353" />
+    <state width="1358" height="199" key="GridCell.Tab.0.left" timestamp="1584169161246">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="199" key="GridCell.Tab.0.left/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584169161246" />
+    <state width="1358" height="199" key="GridCell.Tab.0.left/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168736353" />
+    <state width="1358" height="199" key="GridCell.Tab.0.right" timestamp="1584169161247">
+      <screen x="-157" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1358" height="199" key="GridCell.Tab.0.right/0.23.1440.826/-157.-1027.1680.1027@-157.-1027.1680.1027" timestamp="1584169161247" />
+    <state width="1358" height="199" key="GridCell.Tab.0.right/0.23.1440.826/-157.-1027.1680.1027@0.23.1440.826" timestamp="1584168736353" />
+    <state x="417" y="248" key="com.intellij.ide.util.TipDialog" timestamp="1584164581041">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="417" y="248" key="com.intellij.ide.util.TipDialog/0.23.1440.825/-157.-1027.1680.1027@0.23.1440.825" timestamp="1584164581041" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/isbn_validator$StockManagementTests_databaseIsUsedIfDataIsPresent.ic" NAME="StockManagementTests.databaseIsUsedIfDataIsPresent Coverage Results" MODIFIED="1575345059556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

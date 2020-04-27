@@ -6,13 +6,13 @@
 3. User enter same x , y again 
 
 ###Move accepted 
-Board is filled with Player1 mark X 
-Board is filled with Player2 mark O
+1. Board is filled with Player1 mark X 
+2. Board is filled with Player2 mark O
 
 ###Switch Player 
-First Player is Player1 with mark X
-Last player is player 1 next player is player2 
-Last player is player 2 next player is player1
+1. First Player is Player1 with mark X
+2. Last player is player 1 next player is player2 
+3. Last player is player 2 next player is player1
 
 ###Winner 
 * A player wins when all fields in a column are taken by the player.

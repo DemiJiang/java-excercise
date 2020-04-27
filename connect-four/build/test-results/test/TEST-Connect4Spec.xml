@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Connect4Spec" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-03T09:45:08" hostname="C02ZT2YXLVDM" time="0.004">
+  <properties/>
+  <testcase name="whenTheGameIsStartedTheBoardIsEmpty" classname="Connect4Spec" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
