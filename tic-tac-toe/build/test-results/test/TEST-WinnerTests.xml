@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WinnerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-27T06:06:47" hostname="C02ZT2YXLVDM" time="0.01">
+  <properties/>
+  <testcase name="shouldReturnPlayer1WhenDiagonalCrossedWithXFromTopToBottom" classname="WinnerTests" time="0.006"/>
+  <testcase name="shouldReturnPlayer2WhenDiagonalCrossedWithOFromBottomToTop" classname="WinnerTests" time="0.002"/>
+  <testcase name="shouldReturnPlayer2WhenWholeColumnCrossedWithO" classname="WinnerTests" time="0.001"/>
+  <testcase name="shouldReturnPlayer1WhenWholeRowCrossedWithX" classname="WinnerTests" time="0.001"/>
+  <system-out><![CDATA[X . . 
+O X . 
+. O X 
+X . O 
+X O X 
+O . . 
+X O X 
+X O . 
+. O . 
+. . . 
+X X X 
+. O O 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
