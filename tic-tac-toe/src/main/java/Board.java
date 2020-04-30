@@ -1,14 +1,16 @@
 public class Board {
     private char[][] board;
+    private int size;
 
-    public Board() {
-        board = new char[3][3];
+    public Board(int boardSize) {
+        this.size = boardSize;
+        board = new char[size][size];
         initializeBoard();
     }
 
     private void initializeBoard(){
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        for(int i = 0; i < this.size; i++){
+            for(int j = 0; j < this.size; j++){
                 board[i][j] = '.';
             }
         }
@@ -19,8 +21,8 @@ public class Board {
     }
 
     public void printBoard(){
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        for(int i = 0; i < this.size; i++){
+            for(int j = 0; j < this.size; j++){
                 System.out.print(board[i][j] + " ");
             }
             System.out.println();
@@ -32,8 +34,8 @@ public class Board {
     }
 
     public boolean isBoardFull() {
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        for(int i = 0; i < this.size; i++){
+            for(int j = 0; j < this.size; j++){
                 if(board[i][j] == '.')
                     return false;
             }

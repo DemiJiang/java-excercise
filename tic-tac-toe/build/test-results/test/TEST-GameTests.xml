@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-27T06:06:47" hostname="C02ZT2YXLVDM" time="0.016">
+<testsuite name="GameTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-30T02:53:46" hostname="C02ZT2YXLVDM" time="0.007">
   <properties/>
-  <testcase name="shouldReturnTieWhenBoardIsFullAndNoWinner" classname="GameTests" time="0.004"/>
-  <testcase name="shouldReturnPlayer2WhenLastTurnWasPlayer1" classname="GameTests" time="0.001"/>
-  <testcase name="shouldReturnTrueWhenBoardIsFull" classname="GameTests" time="0.006"/>
-  <testcase name="shouldReturnFalseWhenXPositionOutsideBoard" classname="GameTests" time="0.001"/>
+  <testcase name="shouldReturnTieWhenBoardIsFullAndNoWinner" classname="GameTests" time="0.001"/>
+  <testcase name="shouldReturnPlayer2WhenLastTurnWasPlayer1" classname="GameTests" time="0.0"/>
+  <testcase name="shouldReturnTrueWhenBoardIsFull" classname="GameTests" time="0.002"/>
+  <testcase name="shouldReturnFalseWhenXPositionOutsideBoard" classname="GameTests" time="0.0"/>
   <testcase name="shouldReturnFalseWhenYPositionOutsideBoard" classname="GameTests" time="0.0"/>
-  <testcase name="shouldReturnPlayer1WinTheGameWhenPlayer1IsTheWinner" classname="GameTests" time="0.0"/>
+  <testcase name="shouldReturnPlayer1WinTheGameWhenPlayer1IsTheWinner" classname="GameTests" time="0.001"/>
   <testcase name="shouldReturnPlayer1WhenFirstTurn" classname="GameTests" time="0.0"/>
-  <testcase name="shouldReturnFalseWhenDuplicateMove" classname="GameTests" time="0.0"/>
+  <testcase name="shouldReturnFalseWhenDuplicateMove" classname="GameTests" time="0.001"/>
   <system-out><![CDATA[X O X 
 X O X 
 O X O 

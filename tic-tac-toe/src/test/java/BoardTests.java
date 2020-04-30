@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class BoardTests {
-    Board board = new Board();
+    Board board = new Board(3);
     Player player1 = new Player("Player1", 'X');
     Player player2 = new Player("Player2", 'O');
 

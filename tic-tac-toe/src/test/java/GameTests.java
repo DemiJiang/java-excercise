@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class GameTests {
-    Board board = new Board();
+    Board board = new Board(3);
     ArrayList<Player> players = new ArrayList<>();
     Game game;
     Player player1 = new Player("Player1", 'X');

@@ -14,9 +14,9 @@ public class Winner {
     }
 
     private char rowCrossed(Board board){
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < board.getBoard().length; i++){
             char check = board.getBoard()[i][0];
-            for(int j = 1; j < 3; j++){
+            for(int j = 1; j < board.getBoard().length; j++){
                 if(check != board.getBoard()[i][j]){
                     check = '.';
                     break;
@@ -30,9 +30,9 @@ public class Winner {
     }
 
     private char columnCrossed(Board board){
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < board.getBoard().length; i++){
             char check = board.getBoard()[0][i];
-            for(int j = 1; j < 3; j++){
+            for(int j = 1; j < board.getBoard().length; j++){
                 if(check != board.getBoard()[j][i]){
                     check = '.';
                     break;
@@ -46,7 +46,7 @@ public class Winner {
 
     private char diagonalCrossed(Board board){
         char check = board.getBoard()[0][0];
-        for(int i = 1; i < 3; i++){
+        for(int i = 1; i < board.getBoard().length; i++){
             if(check != board.getBoard()[i][i]){
                 check = '.';
                 break;
@@ -55,7 +55,7 @@ public class Winner {
         if(check != '.')
             return check;
         check = board.getBoard()[0][2];
-        for(int i = 1; i < 3; i++ ){
+        for(int i = 1; i < board.getBoard().length; i++ ){
             if(check != board.getBoard()[i][2-i]){
                 check = '.';
                 break;
