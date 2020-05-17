@@ -1,8 +1,9 @@
-import java.util.ArrayList;
+import IO.ConsoleInput;
+import IO.ConsoleOutput;
 
 public class TicTacToe {
     public static void main(String[] args){
-        Game game = new Game();
+        GameService game = new GameService(new ConsoleInput(), new ConsoleOutput());
         game.start();
     }
 }

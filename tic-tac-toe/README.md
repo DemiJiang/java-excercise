@@ -22,11 +22,11 @@
 ###Conditions for a draw
 The game is drawn when all fields are taken on the board.
 
-###Game is Over 
+###GameService is Over 
 Board is full 
 There is a winner 
 
-###Game result 
+###GameService result 
 One of players wins 
-Game ties 
+GameService ties 
 No winner 

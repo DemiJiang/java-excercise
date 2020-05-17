@@ -14,12 +14,4 @@ public class Player {
     public Character getMark() {
         return mark;
     }
-
-//    @Override
-//    public String toString() {
-//        return "Player{" +
-//                "name='" + name + '\'' +
-//                ", mark=" + mark +
-//                '}';
-//    }
 }

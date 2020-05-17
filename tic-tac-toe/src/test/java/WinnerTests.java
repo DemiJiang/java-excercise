@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class WinnerTests {
     Board board = new Board(3);
     ArrayList<Player> players = new ArrayList<>();
-    Game game;
+    GameService game;
     Player player1 = new Player("Player1", 'X');
     Player player2 = new Player("Player2", 'O');
     Winner winner = new Winner();
@@ -17,7 +17,7 @@ public class WinnerTests {
     public void before() {
         players.add(player1);
         players.add(player2);
-        game = new Game(board, players);
+        game = new GameService(board, players);
     }
 
     @Test
