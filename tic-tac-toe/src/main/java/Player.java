@@ -2,7 +2,7 @@ public class Player {
     private String name;
     private char mark;
 
-    public Player(String name, char mark) {
+    public Player(String name, Character mark) {
         this.name = name;
         this.mark = mark;
     }
@@ -11,7 +11,7 @@ public class Player {
         return name;
     }
 
-    public char getMark() {
+    public Character getMark() {
         return mark;
     }
 
