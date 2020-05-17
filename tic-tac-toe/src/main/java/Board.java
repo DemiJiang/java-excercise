@@ -16,10 +16,6 @@ public class Board {
         }
     }
 
-    public void moveBoard(int xPosition, int yPosition, Player player){
-        board[xPosition][yPosition] = player.getMark();
-    }
-
     public void movePieceOnBoard(Coordinates coordinates, Character piece){
         board[coordinates.getX()][coordinates.getY()] = piece;
     }

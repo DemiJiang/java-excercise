@@ -9,15 +9,19 @@ public class Game {
     private Board board;
     private Player currentPlayer;
     private ArrayList<Player> players;
+    private Player player1;
+    private Player player2;
     private Winner winner;
     private Input userInput;
     private Output output;
 
-
-
-    public Game(Board board, ArrayList<Player> players) {
-        this.board = board;
-        this.players = players;
+    public Game() {
+        board = new Board(3);
+        players = new ArrayList<>();
+        player1 = new Player("Player1", 'X');
+        player2 = new Player("Player2", 'O');
+        players.add(player1);
+        players.add(player2);
         currentPlayer = players.get(0);
         winner = new Winner();
         userInput = new ConsoleInput();
@@ -43,20 +47,11 @@ public class Game {
     private void play() {
         askCoordinates();
         String input = userInput.getInput();
-        String[] moves = input.split(",");
-        if(!isValidMove(Integer.parseInt(moves[0]) - 1, Integer.parseInt(moves[1]) - 1)) {
-                System.out.println("Oh no, not a valid move! Please try again...");
+        if(!InputValidator.isValidFormat(input)) {
+            output.displayOutput("Oh no, not a valid move! Please try again...");
                 play();
             }
         move(InputValidator.inputToCoordinate(input));
-    }
-
-    public boolean isValidMove(int xPosition, int yPosition) {
-        if(xPosition < 0 || xPosition > 3 || yPosition < 0 || yPosition > 3)
-            return false;
-        if(board.getBoard()[xPosition][yPosition] != '.')
-            return false;
-        return true;
     }
 
     public void move(Coordinates coordinates) {
