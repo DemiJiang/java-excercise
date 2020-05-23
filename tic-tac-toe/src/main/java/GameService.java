@@ -28,34 +28,39 @@ public class GameService {
         welcomeMessage();
         board.printBoard();
         do{
-            play();
-            output.displayOutput("Moved accepted");
+            boolean successfulMove = false;
+            do {
+                successfulMove = moveAccepted();
+            }while(!successfulMove);
             board.printBoard();
             switchPlayer();
         }while(!isGameOver());
         output.displayOutput(getResult());
     }
 
-    private void play() {
+    public boolean moveAccepted(){
         askCoordinates();
         String userResponse = userInput.getInput();
         Coordinates playerCoordinates = InputValidator.inputToCoordinate(userResponse);
         if(InputValidator.isQuitKeyword(userResponse)){
             System.exit(0);
         }
-
-        if(!InputValidator.isValidFormat(userResponse) && !InputValidator.isValidInputWithBoardRange(userResponse, board.getBoard().length)) {
-            output.displayOutput("Oh no, not a valid move! Please try again..."); // how do I handle exception?
-                play();
-            }else if(isSameMove(playerCoordinates)){
-            output.displayOutput("Oh no, a piece is already taken at this place! Please try again...");
-            play();
+        if(InputValidator.isValidFormat(userResponse) && InputValidator.isValidInputWithBoardRange(userResponse, board.getBoard().length)){
+            if(isPositionAvailable(playerCoordinates)){
+                makeMove(playerCoordinates);
+                output.displayOutput("Moved accepted");
+                return true;
+            }else{
+                output.displayOutput("Oh no, a piece is already taken at this place! Please try again...");
+                return false;
+            }
         }
-        makeMove(playerCoordinates);
+        output.displayOutput("Oh no, not a valid move! Please try again..."); // how do I handle exception?
+        return false;
     }
 
-    public boolean isSameMove(Coordinates coordinates) {
-        return board.getBoard()[coordinates.getX()][coordinates.getY()] != '.';
+    public boolean isPositionAvailable(Coordinates coordinates) {
+        return board.getBoard()[coordinates.getX()][coordinates.getY()] == '.';
 
     }
 

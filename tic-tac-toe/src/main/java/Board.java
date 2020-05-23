@@ -1,10 +1,9 @@
 public class Board {
     private Character[][] board;
     private int size;
-    private Character filler;
+    private static final Character FILLER = '.';
 
     public Board(int boardSize) {
-        filler = '.';
         this.size = boardSize;
         board = new Character[size][size];
         initializeBoard();
@@ -13,7 +12,7 @@ public class Board {
     private void initializeBoard(){
         for(int i = 0; i < this.size; i++){
             for(int j = 0; j < this.size; j++){
-                board[i][j] = filler;
+                board[i][j] = FILLER;
             }
         }
     }
@@ -39,7 +38,7 @@ public class Board {
     public boolean isBoardFull() {
         for(int i = 0; i < this.size; i++){
             for(int j = 0; j < this.size; j++){
-                if(board[i][j] == filler)
+                if(board[i][j] == FILLER)
                     return false;
             }
         }
@@ -51,15 +50,15 @@ public class Board {
             Character check = board[i][0];
             for(int j = 1; j < board.length; j++){
                 if(check != board[i][j]){
-                    check = filler;
+                    check = FILLER;
                     break;
                 }
             }
-            if(check != filler){
+            if(check != FILLER){
                 return check;
             }
         }
-        return filler;
+        return FILLER;
     }
 
     public Character columnCrossed(){
@@ -67,35 +66,35 @@ public class Board {
             Character check = board[0][i];
             for(int j = 1; j < board.length; j++){
                 if(check != board[j][i]){
-                    check = filler;
+                    check = FILLER;
                     break;
                 }
             }
-            if(check != filler)
+            if(check != FILLER)
                 return check;
         }
-        return filler;
+        return FILLER;
     }
 
     public Character diagonalCrossed(){
         Character check = board[0][0];
         for(int i = 1; i < board.length; i++){
             if(check != board[i][i]){
-                check = filler;
+                check = FILLER;
                 break;
             }
         }
-        if(check != filler)
+        if(check != FILLER)
             return check;
         check = board[0][2];
         for(int i = 1; i < board.length; i++ ){
             if(check != board[i][2-i]){
-                check = filler;
+                check = FILLER;
                 break;
             }
         }
-        if(check != filler)
+        if(check != FILLER)
             return check;
-        return filler;
+        return FILLER;
     }
 }
