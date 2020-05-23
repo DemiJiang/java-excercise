@@ -35,7 +35,12 @@ public class Board {
         return board;
     }
 
-    public boolean isBoardFull() {
+    public boolean isPositionAvailable(Coordinates coordinates) {
+        return board[coordinates.getX()][coordinates.getY()] == FILLER;
+
+    }
+
+    public boolean noMoveLeft() {
         for(int i = 0; i < this.size; i++){
             for(int j = 0; j < this.size; j++){
                 if(board[i][j] == FILLER)

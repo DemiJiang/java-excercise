@@ -46,7 +46,7 @@ public class GameService {
             System.exit(0);
         }
         if(InputValidator.isValidFormat(userResponse) && InputValidator.isValidInputWithBoardRange(userResponse, board.getBoard().length)){
-            if(isPositionAvailable(playerCoordinates)){
+            if(board.isPositionAvailable(playerCoordinates)){
                 makeMove(playerCoordinates);
                 output.displayOutput("Moved accepted");
                 return true;
@@ -57,11 +57,6 @@ public class GameService {
         }
         output.displayOutput("Oh no, not a valid move! Please try again..."); // how do I handle exception?
         return false;
-    }
-
-    public boolean isPositionAvailable(Coordinates coordinates) {
-        return board.getBoard()[coordinates.getX()][coordinates.getY()] == '.';
-
     }
 
     public void makeMove(Coordinates coordinates) {
@@ -80,7 +75,7 @@ public class GameService {
     }
 
     public boolean isGameOver() {
-        return getWinner(board, players) != null || board.isBoardFull();
+        return getWinner(board, players) != null || board.noMoveLeft();
     }
 
     public Player getWinner(Board board, ArrayList<Player> players) {
@@ -99,7 +94,7 @@ public class GameService {
         if(getWinner(board, players) != null) {
             switchPlayer();
             return currentPlayer.getName() + " wins!";
-        } else if(board.isBoardFull()){
+        } else if(board.noMoveLeft()){
             return "Tie!";
         }
         return "No Winner";
