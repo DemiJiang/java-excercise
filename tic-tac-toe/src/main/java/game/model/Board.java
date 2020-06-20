@@ -12,7 +12,6 @@ public class Board {
         initializeBoard(FILLER);
     }
 
-//    default
 //    public Board(int lengthSize, int wideSize, Character FILLER) {
 //        this.size = boardSize;
 //        board = new Character[lengthSize][wideSize];
