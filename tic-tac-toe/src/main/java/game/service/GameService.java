@@ -1,5 +1,13 @@
-import IO.Input;
-import IO.Output;
+package game.service;
+
+
+
+import game.io.Input;
+import game.io.Output;
+import game.model.Board;
+import game.model.Coordinates;
+import game.model.Player;
+import game.validator.InputValidator;
 
 import java.util.ArrayList;
 

@@ -1,3 +1,7 @@
+package game.validator;
+
+import game.model.Coordinates;
+
 public class InputValidator {
     public static boolean isValidFormat(String input){
         if(input.contains(",") && input.length() == 3 && !input.contains("0"))

@@ -1,21 +1,37 @@
+package game.model;
+
 public class Board {
     private Character[][] board;
     private int size;
     private static final Character FILLER = '.';
 
+    //length wide
     public Board(int boardSize) {
         this.size = boardSize;
         board = new Character[size][size];
-        initializeBoard();
+        initializeBoard(FILLER);
     }
 
-    private void initializeBoard(){
+//    default
+//    public Board(int lengthSize, int wideSize, Character FILLER) {
+//        this.size = boardSize;
+//        board = new Character[lengthSize][wideSize];
+//        initializeBoard(FILLER);
+//    }
+
+    private void initializeBoard(Character FILLER){
         for(int i = 0; i < this.size; i++){
             for(int j = 0; j < this.size; j++){
                 board[i][j] = FILLER;
             }
         }
     }
+
+    //How to make others to use the board
+    public static Board getDefaultBoard(){
+        return new Board(3);
+    }
+
 
     public void movePieceOnBoard(Coordinates coordinates, Character piece){
         board[coordinates.getX()][coordinates.getY()] = piece;

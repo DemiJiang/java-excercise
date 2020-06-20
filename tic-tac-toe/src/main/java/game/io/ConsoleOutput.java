@@ -1,4 +1,4 @@
-package IO;
+package game.io;
 
 public class ConsoleOutput implements Output {
     public ConsoleOutput() {
