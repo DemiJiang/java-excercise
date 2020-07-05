@@ -3,7 +3,7 @@ public class MinesweeperArray {
     public char[][] fillNumbers(char board[][]) {
         char[][] result = new char[board.length][board[0].length];
         for(int i = 0; i < board.length; i++){
-            for(int j=0; j < board[0].length; j++ ){
+            for(int j=0; j < board[i].length; j++ ){
                 if(isMine(i,j,board)){
                      result[i][j] = '*';
                 }else{
