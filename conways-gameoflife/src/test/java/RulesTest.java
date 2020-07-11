@@ -12,21 +12,21 @@ public class RulesTest {
     public void shouldReturnDeadCell_WhenLiveCellSurrounded1LiveCell() {
         Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
                 (new Coordinates(1, 1), new Coordinates(2,2))));
-        assertFalse(CellRules.willCellBeAliveNextGen(new Cell(1,1), board));
+        assertFalse(board.willCellBeAliveNextGen(new Cell(1,1)));
     }
 
     @Test
     public void shouldReturnLiveCell_WhenLiveCellSurrounded2LiveCells() {
         Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
                 (new Coordinates(1, 1), new Coordinates(2,2), new Coordinates(0,1))));
-        assertTrue(CellRules.willCellBeAliveNextGen(new Cell(1,1), board));
+        assertTrue(board.willCellBeAliveNextGen(new Cell(1,1)));
     }
 
     @Test
     public void shouldReturnLiveCell_WhenLiveCellSurrounded3LiveCells() {
         Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
                 (new Coordinates(1, 1), new Coordinates(2,2), new Coordinates(0,0), new Coordinates(1,2))));
-        assertTrue(CellRules.willCellBeAliveNextGen(new Cell(1,1), board));
+        assertTrue(board.willCellBeAliveNextGen(new Cell(1,1)));
     }
 
     @Test
@@ -34,13 +34,13 @@ public class RulesTest {
         Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
                 (new Coordinates(0,1), new Coordinates(1, 1), new Coordinates(2,2),
                         new Coordinates(0,0), new Coordinates(2,1))));
-        assertFalse(CellRules.willCellBeAliveNextGen(new Cell(1,1), board));
+        assertFalse(board.willCellBeAliveNextGen(new Cell(1,1)));
     }
 
     @Test
     public void shouldReturnLiveCell_WhenDeadCellSurrounded3LiveCells() {
         Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
                 (new Coordinates(1, 0), new Coordinates(2,2), new Coordinates(1,2))));
-        assertTrue(CellRules.willCellBeAliveNextGen(new Cell(1,1), board));
+        assertTrue(board.willCellBeAliveNextGen(new Cell(1,1)));
     }
 }

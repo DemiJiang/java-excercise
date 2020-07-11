@@ -9,13 +9,13 @@ public class Cell {
         this.isAlive=false;
     }
 
-//        @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Cell cell = (Cell) o;
-//        return isAlive() == cell.isAlive();
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cell cell = (Cell) o;
+        return isAlive() == cell.isAlive() && getxCoorinate() == cell.getxCoorinate() && getyCoordinate() == cell.getyCoordinate();
+    }
 
     public boolean isAlive() {
         return isAlive;
@@ -32,4 +32,5 @@ public class Cell {
     public int getyCoordinate() {
         return yCoordinate;
     }
+
 }

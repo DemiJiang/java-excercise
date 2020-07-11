@@ -19,7 +19,7 @@ public class BoardTest {
     @After
     public void tearDown(){ board = null;}
 
-    private boolean isGridEmpty(Board board){
+    private boolean isBoardEmpty(Board board){
         for(int x = 0; x < board.getWidth(); x++){
             for(int y = 0; y < board.getHeight(); y++){
                 if(board.getCellByCooridinate(new Coordinates(x,y)).isAlive()){
@@ -33,7 +33,7 @@ public class BoardTest {
 
     @Test
     public void shouldReturnEmptyGrid_WhenInitialised() {
-        boolean actual = isGridEmpty(board);
+        boolean actual = isBoardEmpty(board);
         Assert.assertTrue(actual);
     }
 
@@ -41,7 +41,7 @@ public class BoardTest {
     public void shouldNotReturnEmptyGrid_WhenContainsAliveCell() {
         Board board = new Board(5, 5,
                 new ArrayList<>(Arrays.asList(new Coordinates(1,1))));
-        boolean actual = isGridEmpty(board);
+        boolean actual = isBoardEmpty(board);
         Assert.assertFalse(actual);
     }
 
@@ -67,6 +67,21 @@ public class BoardTest {
         ArrayList<Coordinates> expectedCoordinates = new ArrayList<>(
                 Arrays.asList(new Coordinates(1, 2), new Coordinates(2, 2), new Coordinates(3,2))
         );
-        assertEquals(expectedCoordinates, board.getCoordinatesOfNextGenerationCells(board));
+        assertEquals(expectedCoordinates, board.getCoordinatesOfNextGenerationCells());
+    }
+
+    @Test
+    public void shouldReturnNewBoardWithNextGenerationCells() {
+        board = new Board(5, 5, new ArrayList<>(Arrays.asList(
+                new Coordinates(3,1), new Coordinates(3,2), new Coordinates(3,3)
+        )));
+        Board expectedNextGenBoard = new Board(5, 5, new ArrayList<>(Arrays.asList(
+                new Coordinates(2,2), new Coordinates(3,2), new Coordinates(4,2)
+        )));
+
+        Board actual = board.getNextGenerationBoard();
+        assertEquals(expectedNextGenBoard, actual);
+
+
     }
 }
