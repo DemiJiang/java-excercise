@@ -1,4 +1,4 @@
-package weather;
+package observer.weather;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
