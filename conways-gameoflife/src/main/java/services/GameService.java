@@ -32,7 +32,7 @@ public class GameService {
     private void gameGeneration(Grid grid, int generations){
         for(int i = 0; i < generations; i ++){
             grid = grid.getNextGenerationGrid();
-            printBoard();
+            printGrid();
             Wait.pause();
         }
     }
@@ -67,7 +67,7 @@ public class GameService {
         return getAndValidateInput();
     }
 
-    public void printBoard(){
+    public void printGrid(){
         output.displayOutput("----");
         for(int i = 0; i < grid.getHeight(); i++){
             String line = "|";
@@ -85,10 +85,10 @@ public class GameService {
 
 
     }
-    public void gameStart(){
+    public void startGame(){
         output.displayOutput("Welcome to Conway's Game of Life!");
         grid = buildGrid();
-        printBoard();
+        printGrid();
         gameGeneration(grid, getNoOfGenerations());
     }
 }
