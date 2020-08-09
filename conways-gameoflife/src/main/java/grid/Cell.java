@@ -1,3 +1,5 @@
+package grid;
+
 public class Cell {
     private boolean isAlive;
     private int xCoorinate;
@@ -6,7 +8,7 @@ public class Cell {
     public Cell(int xCoorinate, int yCoordinate) {
         this.xCoorinate = xCoorinate;
         this.yCoordinate = yCoordinate;
-        this.isAlive=false;
+        this.isAlive = false;
     }
 
     @Override

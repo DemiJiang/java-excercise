@@ -1,4 +1,8 @@
+import grid.Grid;
+import grid.Cell;
+import grid.Coordinate;
 import org.junit.Test;
+import rules.CellRules;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,37 +14,38 @@ public class RulesTest {
 
     @Test
     public void shouldReturnDeadCell_WhenLiveCellSurrounded1LiveCell() {
-        Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
-                (new Coordinates(1, 1), new Coordinates(2,2))));
-        assertFalse(board.willCellBeAliveNextGen(new Cell(1,1)));
+        Grid grid = new Grid(3, 3, new ArrayList<>(Arrays.asList
+                (new Coordinate(1, 1), new Coordinate(2,2))));
+        assertFalse(CellRules.willCellBeAliveNextGen(new Cell(1,1), grid));
     }
 
     @Test
     public void shouldReturnLiveCell_WhenLiveCellSurrounded2LiveCells() {
-        Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
-                (new Coordinates(1, 1), new Coordinates(2,2), new Coordinates(0,1))));
-        assertTrue(board.willCellBeAliveNextGen(new Cell(1,1)));
+        Grid grid = new Grid(3, 3, new ArrayList<>(Arrays.asList
+                (new Coordinate(1, 1), new Coordinate(2,2), new Coordinate(0,1))));
+        assertTrue(CellRules.willCellBeAliveNextGen(new Cell(1,1), grid));
     }
 
     @Test
     public void shouldReturnLiveCell_WhenLiveCellSurrounded3LiveCells() {
-        Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
-                (new Coordinates(1, 1), new Coordinates(2,2), new Coordinates(0,0), new Coordinates(1,2))));
-        assertTrue(board.willCellBeAliveNextGen(new Cell(1,1)));
+        Grid grid = new Grid(3, 3, new ArrayList<>(Arrays.asList
+                (new Coordinate(1, 1), new Coordinate(2,2), new Coordinate(0,0), new Coordinate(1,2))));
+        assertTrue(CellRules.willCellBeAliveNextGen(new Cell(1,1), grid));
     }
 
     @Test
     public void shouldReturnDeadCell_WhenLiveCellSurrounded4LiveCell() {
-        Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
-                (new Coordinates(0,1), new Coordinates(1, 1), new Coordinates(2,2),
-                        new Coordinates(0,0), new Coordinates(2,1))));
-        assertFalse(board.willCellBeAliveNextGen(new Cell(1,1)));
+        Grid grid = new Grid(3, 3, new ArrayList<>(Arrays.asList
+                (new Coordinate(0,1), new Coordinate(1, 1), new Coordinate(2,2),
+                        new Coordinate(0,0), new Coordinate(2,1))));
+        assertFalse(CellRules.willCellBeAliveNextGen(new Cell(1,1), grid));
     }
 
     @Test
     public void shouldReturnLiveCell_WhenDeadCellSurrounded3LiveCells() {
-        Board board = new Board(3, 3, new ArrayList<>(Arrays.asList
-                (new Coordinates(1, 0), new Coordinates(2,2), new Coordinates(1,2))));
-        assertTrue(board.willCellBeAliveNextGen(new Cell(1,1)));
+        Grid grid = new Grid(3, 3, new ArrayList<>(Arrays.asList
+                (new Coordinate(1, 0), new Coordinate(2,2), new Coordinate(1,2))));
+        assertTrue(CellRules.willCellBeAliveNextGen(new Cell(1,1), grid));
     }
+
 }

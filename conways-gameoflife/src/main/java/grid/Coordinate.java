@@ -1,8 +1,10 @@
-public class Coordinates {
+package grid;
+
+public class Coordinate {
     private int x;
     private int y;
 
-    public Coordinates(int x, int y){
+    public Coordinate(int x, int y){
         this.x = x;
         this.y = y;
     }
@@ -11,7 +13,7 @@ public class Coordinates {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Coordinates that = (Coordinates) o;
+        Coordinate that = (Coordinate) o;
         return getX() == that.getX() &&
                 getY() == that.getY();
     }
