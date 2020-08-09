@@ -15,5 +15,5 @@ Test 3: count the neighbours Live Cells
 Test 4: Will Cell be alive in next Generation
 
 Game of Life UML diagram: 
-
+<img src="https://github.com/DemiJiang/java-excercise/blob/master/conways-gameoflife/docs/gameoflifeuml.png" width="800" />
 
