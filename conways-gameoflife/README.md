@@ -9,7 +9,6 @@ Ask from the input (A list of Coordinates to decide which cells are alive)
 Based on the rules 
 getTheNextGenra
 Generation Zero -> Generation 1 -> Generation 2
-
 Test 1: produce an empty grid which accept the length and width 
 Test 2: produce Generation zero 
 Test 3: count the neighbours Live Cells 
@@ -50,7 +49,20 @@ Test 4: Will Cell be alive in next Generation
                   
                   Thank for playing, the generation ends!
 ````
+---
+###INSTRUCTIONS:
+clone the repo to your local machine:
 
-Game of Life UML diagram: 
+```https://github.com/DemiJiang/java-excercise/tree/master/conways-gameoflife```
+
+Then navigate to the root folder and run:
+```javac Main.java```
+
+followed by: 
+```java main```
+
+---
+###Game of Life UML diagram: 
+
 <img src="https://github.com/DemiJiang/java-excercise/blob/master/conways-gameoflife/docs/gameoflifeuml.png" width="800" />
 
