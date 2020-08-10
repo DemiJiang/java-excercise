@@ -4,10 +4,13 @@ import grid.Grid;
 import grid.Cell;
 import grid.Coordinate;
 
+import java.util.ArrayList;
+
 public class CellRules {
-    static boolean isLiveCellAliveNextGen(int noOfNeighbors){
-        return noOfNeighbors == 2 || noOfNeighbors ==3;
+    static boolean isLiveCellAliveNextGen(int noOfLiveNeighbors){
+        return noOfLiveNeighbors == 2 || noOfLiveNeighbors ==3;
     }
+
     static boolean isDeadCellAliveNextGen(int noOfNeighbors){
         return noOfNeighbors == 3;
     }
@@ -17,4 +20,6 @@ public class CellRules {
                 isLiveCellAliveNextGen(grid.getNumberOfNeighborsLiveCells(currentCell)):
                 isDeadCellAliveNextGen(grid.getNumberOfNeighborsLiveCells(currentCell));
     }
+
+
 }

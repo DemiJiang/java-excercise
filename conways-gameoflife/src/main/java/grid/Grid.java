@@ -39,6 +39,30 @@ public class Grid {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Grid grid1 = (Grid) o;
+        return Arrays.deepEquals(this.grid, grid1.grid);
+    }
+
+
+    public String printGrid(){
+        StringBuilder board = new StringBuilder();
+        for(int i = 0; i < getHeight(); i++){
+            for(int j = 0; j < getWidth(); j++){
+                if(getCellByCooridinate(new Coordinate(i, j)).isAlive()){
+                    board.append("*");
+                }else{
+                    board.append(".");
+                }
+            }
+            board.append("\n");
+        }
+        return board.toString();
+    }
+
     public int getNumberOfNeighborsLiveCells(Cell cell){
         int count = 0;
         for(int i = Math.max(cell.getxCoorinate()-1, 0); i <= Math.min(cell.getxCoorinate()+1, getWidth()-1); i++){
@@ -68,16 +92,9 @@ public class Grid {
         return coordinatesofAliveCellOnNextGeneration;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Grid grid1 = (Grid) o;
-        return Arrays.deepEquals(this.grid, grid1.grid);
-    }
-
     public Grid getNextGenerationGrid(){
         ArrayList<Coordinate> nextBoardConfiguration = getCoordinatesOfNextGenerationCells();
         return new Grid(getWidth(), getHeight(), nextBoardConfiguration);
     }
+
 }

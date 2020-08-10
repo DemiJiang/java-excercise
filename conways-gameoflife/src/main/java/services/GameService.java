@@ -14,6 +14,7 @@ public class GameService {
     private Output output;
     private Grid grid;
 
+
     public GameService(Input input, Output output) {
         this.input = input;
         this.output = output;
@@ -25,14 +26,14 @@ public class GameService {
         int gridWidth = getAndValidateInput();
         output.displayOutput("Please enter the height:");
         int gridHeight = getAndValidateInput();
-        ArrayList<Coordinate> liveCellsCoordinates = getLiveCellsCoordinatesFromInput(gridWidth, gridHeight);
+        ArrayList<Coordinate> liveCellsCoordinates = getLiveCellsCoordinatesFromInput();
         return new Grid(gridWidth, gridHeight, liveCellsCoordinates);
     }
 
     private void gameGeneration(Grid grid, int generations){
         for(int i = 0; i < generations; i ++){
             grid = grid.getNextGenerationGrid();
-            printGrid();
+            output.displayOutput(grid.printGrid());
             Wait.pause();
         }
     }
@@ -49,16 +50,10 @@ public class GameService {
     }
 
 
-    private ArrayList<Coordinate> getLiveCellsCoordinatesFromInput(int gridWidth, int gridHeight){
-        boolean validInput = false;
+    private ArrayList<Coordinate> getLiveCellsCoordinatesFromInput(){
         String inputCoordinates = "";
-
-        while(!validInput) {
             output.displayOutput("Please input your live cell(s) coordinates:");
             inputCoordinates = input.nextLine();
-            validInput = InputValidator.isValidFormat(inputCoordinates, gridWidth, gridHeight);
-            output.displayOutput(validInput? "Thank you!": "Invalid entry! Please try again:");
-        }
         return InputConverter.parseInputToCoordinates(inputCoordinates);
     }
 
@@ -67,28 +62,11 @@ public class GameService {
         return getAndValidateInput();
     }
 
-    public void printGrid(){
-        output.displayOutput("----");
-        for(int i = 0; i < grid.getHeight(); i++){
-            String line = "|";
-            for( int j = 0; j < grid.getWidth(); j++){
-                if(grid.getCellByCooridinate(new Coordinate(i, j)).isAlive()){
-                    line += "*";
-                }else{
-                    line += '.';
-                }
-            }
-            line += "|";
-            output.displayOutput(line);
-        }
-        output.displayOutput("----");
 
-
-    }
     public void startGame(){
         output.displayOutput("Welcome to Conway's Game of Life!");
         grid = buildGrid();
-        printGrid();
         gameGeneration(grid, getNoOfGenerations());
+        output.displayOutput("Thank for playing, the generation ends!");
     }
 }

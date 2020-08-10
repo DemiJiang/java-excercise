@@ -14,8 +14,4 @@ public class ConsoleInput implements Input {
         return scanner.nextLine();
     }
 
-    @Override
-    public int nextInt() {
-        return scanner.nextInt();
-    }
 }

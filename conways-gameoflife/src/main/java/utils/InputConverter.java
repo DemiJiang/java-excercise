@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class InputConverter {
     public static ArrayList<Coordinate> parseInputToCoordinates(String inputCoordinatesString){
-        String[] splitAtDelimiter = inputCoordinatesString.split("/");
+        String[] splitAtDelimiter = inputCoordinatesString.split(" ");
         ArrayList<Coordinate> parsedCoordinates = new ArrayList<>();
         for(String coordinate : splitAtDelimiter){
             parsedCoordinates.add(parseSingleCoordinate(coordinate));

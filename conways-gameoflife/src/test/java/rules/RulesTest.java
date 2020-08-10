@@ -1,3 +1,5 @@
+package rules;
+
 import grid.Grid;
 import grid.Cell;
 import grid.Coordinate;
