@@ -63,7 +63,7 @@ public class GameService {
     }
 
 
-    public void startGame(){
+    public void runGame(){
         output.displayOutput("Welcome to Conway's Game of Life!");
         grid = buildGrid();
         gameGeneration(grid, getNoOfGenerations());

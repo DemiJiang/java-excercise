@@ -63,7 +63,7 @@ public class Grid {
         return board.toString();
     }
 
-    public int getNumberOfNeighborsLiveCells(Cell cell){
+    public int countNumberOfNeighborsLiveCells(Cell cell){
         int count = 0;
         for(int i = Math.max(cell.getxCoorinate()-1, 0); i <= Math.min(cell.getxCoorinate()+1, getWidth()-1); i++){
             for(int j = Math.max(cell.getyCoordinate()-1, 0); j <= Math.min(cell.getyCoordinate()+1, getWidth()-1); j++){

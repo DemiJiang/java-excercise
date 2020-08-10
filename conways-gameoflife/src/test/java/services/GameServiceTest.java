@@ -1,6 +1,5 @@
 package services;
 
-import io.ConsoleInput;
 import io.Input;
 import org.junit.Before;
 import org.junit.Test;
@@ -45,7 +44,30 @@ public class GameServiceTest {
                 ".....\n" + "***..\n" + ".....\n" + ".....\n" + ".....\n" ,
                 "Thank for playing, the generation ends!"
         ));
-        game.startGame();
+        game.runGame();
+        assertEquals(expectedMessage.toString(), output.returnCollectedOutput().toString());
+    }
+
+    @Test
+    public void runGameWithValidation() {
+        mockInput.add(3, "h");
+        ArrayList<String> expectedMessage = new ArrayList<>(Arrays.asList(
+                "Welcome to Conway's Game of Life!",
+                "How big would you like your grid:",
+                "Please enter the width:",
+                "Thank you!",
+                "Please enter the height:",
+                "Thank you!",
+                "Please input your live cell(s) coordinates:",
+                "How many generations will it run: ",
+                "Invalid entry! Please try again:",
+                "Thank you!",
+                ".*...\n" + ".*...\n" + ".*...\n" + ".....\n" + ".....\n" ,
+                ".....\n" + "***..\n" + ".....\n" + ".....\n" + ".....\n" ,
+                "Thank for playing, the generation ends!"
+        ));
+        game.runGame();
+        System.out.println(mockInput);
         assertEquals(expectedMessage.toString(), output.returnCollectedOutput().toString());
     }
 }

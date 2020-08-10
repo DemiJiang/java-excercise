@@ -1,8 +1,5 @@
 package grid;
 
-import grid.Grid;
-import grid.Cell;
-import grid.Coordinate;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -54,14 +51,14 @@ public class GridTest {
     public void shouldReturn1ForLiveCell_WhenNoOfNeigbournLiveCellIs1() {
         Grid grid = new Grid(3, 3,
                 new ArrayList<>(Arrays.asList(new Coordinate(1, 1), new Coordinate(2, 2))));
-        assertEquals(1, grid.getNumberOfNeighborsLiveCells(new Cell(1,1)));
+        assertEquals(1, grid.countNumberOfNeighborsLiveCells(new Cell(1,1)));
     }
 
     @Test
     public void shouldReturn3ForDeadCell_WhenNoOfNeigbournLiveCellIs3() {
         Grid grid = new Grid(3, 3,
                 new ArrayList<>(Arrays.asList(new Coordinate(0, 1), new Coordinate(2,1), new Coordinate(2, 2))));
-        assertEquals(3, grid.getNumberOfNeighborsLiveCells(new Cell(1,1)));
+        assertEquals(3, grid.countNumberOfNeighborsLiveCells(new Cell(1,1)));
     }
 
     @Test
