@@ -11,6 +11,10 @@ public class Cell {
         this.isAlive = false;
     }
 
+    public Cell(boolean isAlive) {
+        this.isAlive = isAlive;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

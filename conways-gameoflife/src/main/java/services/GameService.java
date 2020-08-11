@@ -54,7 +54,7 @@ public class GameService {
         String inputCoordinates = "";
             output.displayOutput("Please input your live cell(s) coordinates:");
             inputCoordinates = input.nextLine();
-        return InputConverter.parseInputToCoordinates(inputCoordinates);
+        return InputConverter.convertInputToCoordinates(inputCoordinates);
     }
 
     private int getNoOfGenerations(){

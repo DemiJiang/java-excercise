@@ -3,7 +3,6 @@ package utils;
 import grid.Coordinate;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -16,6 +15,6 @@ public class InputConverterTest {
                 new Coordinate(1, 2),
                 new Coordinate(2,3)));
 
-        assertEquals(expectedCoordinates, InputConverter.parseInputToCoordinates("2,3 3,4"));
+        assertEquals(expectedCoordinates, InputConverter.convertInputToCoordinates("2,3 3,4"));
     }
 }
