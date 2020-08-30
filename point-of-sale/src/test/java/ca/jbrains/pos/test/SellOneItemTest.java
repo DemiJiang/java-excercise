@@ -17,14 +17,13 @@ public class SellOneItemTest {
     }
 
     @Test
-    @Ignore("Refactoring...")
     public void anotherProductFound() {
         final Display display = new Display();
         final Sale sale = new Sale(display);
 
         sale.onBarcode("23456");
 
-        assertEquals("$12.5", display.getText());
+        assertEquals("$12.50", display.getText());
     }
 
     public static class Display{
@@ -32,7 +31,6 @@ public class SellOneItemTest {
         private String text;
 
         public String getText() {
-            text = "$7.95";
             return text;
         }
 
@@ -49,7 +47,10 @@ public class SellOneItemTest {
         }
 
         public void onBarcode(String barcode){
-            display.setText("$7.95");
+            if(barcode.equals("12345"))
+                display.setText("$7.95");
+            else
+            display.setText("$12.50");
         }
     }
 }
